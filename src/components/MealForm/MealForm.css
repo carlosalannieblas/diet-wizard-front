@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+.elH1 {
+  color: #4caf50;
+  padding: 20px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-color: #f5f5f5;
+  margin: 0;
+}
+
+.wrapper {
+  background-color: #ffffff;
+  list-style-type: none;
+  padding: 20px;
+  border-radius: 5px;
+  width: 50%;
+  margin: 0 auto;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 0.5em;
+}
+
+.form-row > label {
+  flex-basis: 30%;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+}
+
+.form-row > select,
+.form-row > input,
+.form-row > .descArea {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  flex: 1 1 100%;
+  padding: 10px;
+  margin-top: 0.5em;
+  background-color: #ffffff;
+}
+
+.form-row > select {
+  margin-top: 0.5em;
+}
+
+.form-row > .descArea {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 100%;
+}
+
+.form-row > .descArea > .react-quill {
+  width: 100%;
+}
+
+.form-row > button {
+  border: 0;
+  background-color: #39a233;
+  color: #ffffff;
+  padding: 10px 20px;
+  margin: 20px auto;
+  display: block;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Responsive Styles */
+
+@media screen and (max-width: 768px) {
+  .wrapper {
+    width: 90%;
+  }
+
+  .form-row {
+    flex-direction: column;
+  }
+
+  .form-row > label {
+    flex-basis: 100%;
+    margin-bottom: 0.5em;
+  }
+
+  .form-row > select {
+    flex-basis: 100%;
+    margin-top: 0.5em;
+  }
+}

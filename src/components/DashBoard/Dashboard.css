@@ -1,0 +1,116 @@
+.dashboard {
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.dashboard-title {
+  font-size: 24px;
+  color: #4caf50;
+}
+
+.dashboard-buttons {
+  display: flex;
+}
+
+.dashboard-button {
+  display: flex;
+  align-items: center;
+  background-color: #6bc995;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  margin-left: 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.dashboard-icon {
+  margin-right: 5px;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, max-content));
+  gap: 20px;
+}
+
+.card {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  width: auto;
+  min-width: 250px;
+}
+
+.card-title {
+  font-size: 20px;
+  color: #333333;
+  margin-bottom: 10px;
+}
+
+.card-description {
+  color: #666666;
+  margin-bottom: 10px;
+  white-space: pre-wrap;
+}
+
+.card-details {
+  color: #999999;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card-details span {
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .cards-container {
+    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+  }
+}
+
+.cards-container {
+  margin-bottom: 4rem; /* Add some margin to create space for the pagination */
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem; /* Add some space between the cards and the pagination */
+}
+
+.pagination-button {
+  background-color: #f2f2f2;
+  color: #555;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  margin: 0 0.25rem;
+  transition: background-color 0.3s ease;
+}
+
+.pagination-button:hover {
+  background-color: #ddd;
+}
+
+.pagination-info {
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 0 0.5rem;
+}
